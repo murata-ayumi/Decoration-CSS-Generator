@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+body {
+  background-color: #f0f0f0;
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+h1 {
+  font-size: clamp(1.75rem, 1.477rem + 1.36vw, 2.5rem);
+  color: #d471a2;
+  font-weight: bold;
+  text-align: center;
+  margin-top: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+  margin-bottom: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+  text-shadow: 1px 1px 2px #000, -1px -1px 2px #fff;
+}
+.exH {
+  font-size: clamp(1.75rem, 1.477rem + 1.36vw, 2.5rem);
+  color: #7a7777;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+  text-shadow: 1px 1px 3px #000, -2px -2px 2px #f7f7f7;
+}
+h2 {
+  font-size: clamp(1.125rem, 0.989rem + 0.68vw, 1.5rem);
+  font-weight: bold;
+  color: #7b1a7f;
+  white-space: nowrap;
+  text-align: center;
+  margin-bottom: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+}
+p {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
+  font-weight: 900;
+  margin-bottom: clamp(0.313rem, 0.199rem + 0.57vw, 0.625rem);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.generator {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  margin: 0px auto;
+  margin-bottom: 10px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.075);
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+  border: 2px rgba(255, 255, 255, 0.4) solid;
+  border-bottom: 2px rgba(40, 40, 40, 0.35) solid;
+  border-right: 2px rgba(40, 40, 40, 0.35) solid;
+}
+
+#gradientText {
+  font-size: clamp(1.75rem, 1.477rem + 1.36vw, 2.5rem);
+  font-weight: bold;
+  display: inline-block;
+  margin-top: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+  margin-bottom: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+}
+span {
+  font-size: clamp(1.75rem, 1.477rem + 1.36vw, 2.5rem);
+  font-weight: bold;
+  display: inline-block;
+  margin-top: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+  margin-bottom: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+}
+label {
+  display: inline-flex;
+  align-items: center;
+  font-size: clamp(1rem, 0.909rem + 0.45vw, 1.25rem);
+  white-space: nowrap;
+  font-weight: 800;
+  color: #000;
+  text-align: center;
+  margin-bottom: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+}
+button {
+  margin-top: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #7b1a7f;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+input {
+  margin-left: 5px;
+}
+input:not([type='color'], [type='text'], [type='checkbox']) {
+  padding: 10px;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #7b1a7f;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+input[type='color'] {
+  vertical-align: middle;
+  cursor: pointer;
+}
+input[type='text'] {
+  width: 100%;
+  height: auto;
+  font-size: clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem);
+  padding: 3px 5px;
+  border: 1px solid #934a96;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+}
+input[type='text']::placeholder {
+  color: #ccc;
+}
+input[type='number'] {
+  width: 30%;
+  height: auto;
+  font-size: clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem);
+  padding: 3px 5px;
+  border: 1px solid #934a96;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+}
+input[type='checkbox'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #934a96;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+input[type='checkbox']:checked::before {
+  content: '✔';
+  position: absolute;
+  inset: 0;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #7b1a7f;
+}
+textarea {
+  width: 70%;
+  height: 100px;
+  margin-top: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+  margin-bottom: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+  padding: 5px 8px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  text-align: center;
+}
+hr {
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  border: none;
+  border-top: 6px dotted #000;
+  opacity: 0.3;
+}

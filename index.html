@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="テキストにグラデーションやシャドウをつけるCSSジェネレーターです"
+    />
+    <title>Decoration CSS Generator</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Decoration CSS Generator</h1>
+
+    <!-- テキストグラデーションジェネレーター -->
+    <div class="generator">
+      <h2>= テキストグラデーション =</h2>
+      <p>テキストカラーをグラデーションにします</p>
+      <p>好きな色を2色設定してください🥰</p>
+      <hr />
+      <label for="startColor"
+        >1つめのカラー:<input type="color" id="startColor"
+      /></label>
+      <label for="endColor"
+        >2つめのカラー:<input type="color" id="endColor"
+      /></label>
+      <button id="generateGradientButton">Generate Gradient</button>
+      <div id="gradientText"></div>
+      <textarea id="gradientCSSCode" rows="6" readonly></textarea>
+      <button id="copyGradientButton">Copy CSS</button>
+    </div>
+
+    <!-- テキストシャドウジェネレーター -->
+    <div class="generator">
+      <h2>= テキストシャドウ =</h2>
+      <p>テキストの影をつけます😍</p>
+      <p>例えば下記のようになります。</p>
+      <h1 class="exH">Happy!</h1>
+      <p>マイナス方向をハイライト代わりにしております🐱</p>
+      <hr />
+      <label for="shadowText"
+        >テキスト:
+        <input
+          type="text"
+          id="shadowText"
+          placeholder="影を付けるテキスト"
+          required
+      /></label>
+      <label for="fontColor"
+        >テキストのカラー: <input type="color" id="fontColor" value="#000000"
+      /></label>
+
+      <label for="shadowColor"
+        >影の色: <input type="color" id="shadowColor" value="#000000"
+      /></label>
+
+      <label for="xOffset"
+        >横方向オフセット:
+        <input type="number" id="xOffset" value="1" min="-10" max="10"
+      /></label>
+
+      <label for="yOffset"
+        >縦方向オフセット:
+        <input type="number" id="yOffset" value="1" min="-10" max="10"
+      /></label>
+
+      <label for="blurRadius"
+        >ぼかしの半径:
+        <input type="number" id="blurRadius" value="2" min="0" max="10"
+      /></label>
+
+      <label for="includeNegativeOffset"
+        >マイナス方向のオフセットを含める:
+        <input type="checkbox" id="includeNegativeOffset"
+      /></label>
+      <label for="negativeShadowColor"
+        >マイナス方向の影の色:
+        <input type="color" id="negativeShadowColor" value="#000000"
+      /></label>
+
+      <label for="negativeXOffset"
+        >マイナス方向の横オフセット:
+        <input type="number" id="negativeXOffset" value="-1" min="-10" max="10"
+      /></label>
+
+      <label for="negativeYOffset"
+        >マイナス方向の縦オフセット:
+        <input type="number" id="negativeYOffset" value="-1" min="-10" max="10"
+      /></label>
+
+      <label for="negativeBlurRadius"
+        >マイナス方向のぼかしの半径:
+        <input type="number" id="negativeBlurRadius" value="2" min="0" max="10"
+      /></label>
+
+      <button id="generateShadowButton">Generate Shadow</button>
+
+      <div id="shadowResultText"></div>
+      <textarea id="shadowCSSCode" rows="6" readonly></textarea>
+      <button id="copyShadowButton">Copy CSS</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
